@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Contact form</h1>
+      <form action="#">
+        <div class="form-box">
+          <label class="form-label" for="name">Your name</label>
+          <input
+            class="field"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+          />
+        </div>
+
+        <div class="form-box">
+          <label class="form-label" for="email">Your email</label>
+          <input class="field" type="email" id="email" name="email" />
+        </div>
+
+        <div class="form-box">
+          <label class="form-label" for="age">Choose your age</label>
+          <select class="form-area form-select" name="age" id="age">
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+          </select>
+        </div>
+
+        <fieldset class="form-box">
+          <legend class="form-label">Choose your gender</legend>
+          <div class="form-area">
+            <input type="radio" name="gender" id="male" value="male" />
+            <label class="form-radio" for="male">Male</label>
+            <input type="radio" name="gender" id="famale" value="famale" />
+            <label class="form-radio" for="famale">Famale</label>
+            <input type="radio" name="gender" id="another" value="another" />
+            <label class="form-radio" for="another">Another</label>
+          </div>
+        </fieldset>
+        <fieldset class="form-box">
+          <legend class="form-label">Choose your option</legend>
+          <div class="form-area">
+            <input
+              class="form-checkbox"
+              name="option"
+              type="checkbox"
+              value="option_1"
+              id="option_1"
+            />
+            <label for="option_1">Option 1</label>
+            <input
+              class="form-checkbox"
+              name="option"
+              type="checkbox"
+              value="option_2"
+              id="option_2"
+            />
+            <label for="option_2">Option 2</label>
+            <input
+              class="form-checkbox"
+              name="option"
+              type="checkbox"
+              value="option_3"
+              id="option_3"
+            />
+            <label for="option_3">Option 3</label>
+            <input
+              class="form-checkbox"
+              name="option"
+              type="checkbox"
+              value="option_4"
+              id="option_4"
+            />
+            <label for="option_4">Option 4</label>
+          </div>
+        </fieldset>
+
+        <div class="form-box">
+          <label class="form-label" for="phone">Your phone</label>
+          <input class="field" type="tel" name="phone" id="phone" />
+        </div>
+
+        <div class="form-box">
+          <label class="form-label" for="password">Your password</label>
+          <input class="field" type="password" name="password" id="password" />
+        </div>
+
+        <div class="form-box">
+          <label class="form-label" for="message">Your message</label>
+          <textarea
+            class="field"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <div class="form-action">
+          <input class="form-button reset" type="button" value="Reset" />
+          <input class="form-button submit" type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

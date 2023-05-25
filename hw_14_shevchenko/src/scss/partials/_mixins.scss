@@ -1,0 +1,39 @@
+@import "./variables";
+
+@mixin mobile() {
+    @media screen and (max-width: $mobile){
+        @content;
+    }
+}
+
+@mixin tablet_sd() {
+    @media screen and (max-width: $tablet-sd){
+        @content;
+    }
+}
+
+@mixin tablet-hd() {
+    @media screen and (max-width: $tablet-hd){
+        @content;
+    }
+}
+
+@mixin desktop_sd() {
+    @media screen and (max-width: $desktop-sd){
+        @content;
+    }
+}
+
+@mixin desktop() {
+    @media screen and (max-width: $desktop){
+        @content;
+    }
+}
+
+@mixin pinkTextGradient() {
+    background: linear-gradient(90deg, #EF8080 0.84%, $purple 99.96%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}

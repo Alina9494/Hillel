@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.header{
+    background: orange;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 900px;
+}
+
+.box-list {
+    font-size: 0;
+    text-align: center;
+    position: relative;
+}
+
+.box {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    width: 40%;
+    vertical-align: top;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 15px;
+    margin: 10px;
+    text-align: left;
+    position: relative;
+}
+
+.bg-pink {
+    background-color: pink;
+    border-color: palevioletred;
+    padding-left: 40px;
+}
+
+.bg-blue{
+    background-color: rgb(141, 141, 241);
+    border-color: blue;
+} 
+
+.bg-phiolet{
+    background-color: rgb(88, 88, 146);
+    border-color: rgb(45, 45, 96);
+    padding-left: 40px;
+}
+
+.bg-orang{
+    background-color: orange;
+    border-color: rgb(245, 159, 0);
+}
+
+.top-left{
+    position: absolute;
+    top: -125px;
+    left: -105px;
+}
+
+.top-right{
+    position: absolute;
+    top: -95px;
+    right: -90px;
+}
+
+.bottom-right{
+    position: absolute;
+    bottom: -135px;
+    right: -40px;
+}
+
+.fixed-image {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}

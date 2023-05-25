@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.nav {
+    background: #333333;
+    border-bottom: 9px solid #009eff;
+    font: 400 20px/24px 'Lato', sans-serif;
+}
+
+.nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-item {
+    padding: 35px 42px;
+    position: relative;
+}
+
+.nav-item:hover {
+    background: #009eff;
+}
+
+.nav-item:hover .nav-link {
+    color: #fff;
+}
+
+.nav-item.add:hover::before {
+    content: '+';
+    position: absolute;
+    top: 34px;
+    right: 19px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #a4a4a4;
+}
+
+.drop-down {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    padding-top: 9px;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    width: 183%;
+    display: none;
+}
+
+.nav-item:hover .drop-down {
+    display: block;
+}
+
+.drop-item {
+    background: #009eff;
+    border: 2px solid #0084ef;
+    border-bottom: 0;
+    padding: 40px 30px 40px 42px;
+    position: relative;
+}
+
+.drop-item::before {
+    content: '+';
+    position: absolute;
+    top: 38px;
+    right: 19px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.drop-item:hover {
+    background: #00a9ff;
+}
+
+.drop-item:last-child {
+    border-bottom: 2px solid #0084ef;
+}
+
+.drop-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sub-list {
+    position: absolute;
+    left: 100%;
+    top: -2px;
+    width: 100%;
+    background: #00a9ff;
+    list-style: none;
+    color: #fff;
+    display: none;
+    padding: 0;
+}
+
+.drop-item:hover .sub-list {
+    display: block;
+}
+
+.sub-item {
+    padding: 40px 0 40px 40px;
+    border: 2px solid #0084ef;
+    border-bottom: 0;
+    background: #009eff;
+}
+
+.sub-item:last-child {
+    border-bottom: 2px solid #0084ef;
+}
+
+.sub-item:hover {
+    background: #00a9ff;
+}

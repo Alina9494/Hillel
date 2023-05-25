@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <form class="container" action="">
+      <h1 class="title">Contact form</h1>
+      <div class="form-block">
+        <label class="form-label" for="name">Your name</label>
+        <input class="field" type="text" id="name" placeholder="Your name" />
+      </div>
+
+      <div class="form-block">
+        <label class="form-label" for="email">Your email</label>
+        <input class="field" type="email" id="email" />
+      </div>
+
+      <div class="form-block">
+        <label class="form-label" for="age">Choose your age</label>
+        <select class="field field-select" name="age" id="age">
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+        <div>      </div>
+      </div>
+
+      <div class="form-block">
+        <legend class="form-label">Choose your gender</legend>
+        <input class="option" type="radio" name="gender" id="male" />
+        <label for="male">Male</label>
+        <input class="option" type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+        <input class="option" type="radio" name="gender" id="another" />
+        <label for="another">Another</label>
+      </div>
+
+      <div class="form-block">
+        <legend class="form-label">Choose your option</legend>
+        <input class="option" type="checkbox" name="" id="option-1" />
+        <label for="option-1">Option 1</label>
+        <input class="option" type="checkbox" name="" id="option-2" />
+        <label for="option-2">Option 2</label>
+        <input class="option" type="checkbox" name="" id="option-3" />
+        <label for="option-3">Option 3</label>
+        <input class="option" type="checkbox" name="" id="option-4" />
+        <label for="option-4">Option 4</label>
+      </div>
+
+      <div class="form-block">
+        <label class="form-label" for="phone">Your phone</label>
+        <input class="field" type="tel" id="phone" />
+      </div>
+
+      <div class="form-block">
+        <label class="form-label" for="password">Your password</label>
+        <input class="field" type="password" id="password" />
+      </div>
+
+      <div class="form-block">
+        <label class="form-label" for="message">Your message</label>
+        <textarea class="field" rows="10" id="message"></textarea>
+      </div>
+
+      <div class="form-action">
+        <input class="form-button" type="button" value="Reset" />
+        <input class="form-submit" type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
